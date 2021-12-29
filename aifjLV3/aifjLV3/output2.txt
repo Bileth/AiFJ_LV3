@@ -2,32 +2,7 @@ line 1: #define b  3.14
 ('#define b  3.14 ', constant) 
 
  
-line 2: float zbroj ( float x , float y ) {  
-('float', keyword) 
-('zbroj', identificator) 
-('(', unknown) 
-('float', keyword) 
-('x', identificator) 
-(',', separator) 
-('float', keyword) 
-('y', identificator) 
-(')', unknown) 
-('{', unknown) 
-
- 
-line 3: return x + y ;  
-('return', keyword) 
-('x', identificator) 
-('+', operator) 
-('y', identificator) 
-(';', separator) 
-
- 
-line 4: }  
-('}', unknown) 
-
- 
-line 5: int main ( ) {  
+line 2: int main ( ) {  
 ('int', keyword) 
 ('main', identificator) 
 ('(', unknown) 
@@ -35,11 +10,11 @@ line 5: int main ( ) {
 ('{', unknown) 
 
  
-line 6: //ovo je komentar  
+line 3: //ovo je komentar  
 ('//ovo je komentar ', comment) 
 
  
-line 7: int a = 1 ;  
+line 4: int a = 1 ;  
 ('int', keyword) 
 ('a', identificator) 
 ('=', operator) 
@@ -47,7 +22,12 @@ line 7: int a = 1 ;
 (';', separator) 
 
  
-line 8: float c = a + b ;  
+line 5: int a_A;  
+('int', keyword) 
+('a_A;', unknown) 
+
+ 
+line 6: float c = a + b ;  
 ('float', keyword) 
 ('c', identificator) 
 ('=', operator) 
@@ -57,18 +37,12 @@ line 8: float c = a + b ;
 (';', separator) 
 
  
-line 9: float d = zbroj (a , b) ;  
+line 7: float krivaOznaka&;  
 ('float', keyword) 
-('d', identificator) 
-('=', operator) 
-('zbroj', identificator) 
-('(a', unknown) 
-(',', separator) 
-('b)', unknown) 
-(';', separator) 
+('krivaOznaka&;', unknown) 
 
  
-line 10: }  
+line 8: }  
 ('}', unknown) 
 
  
