@@ -1,21 +1,21 @@
 line 1: float zbroj ( float x , float y ) {  
 ('float', keyword) 
-('zbroj', identificator) 
+('zbroj', identifier) 
 ('(', unknown) 
 ('float', keyword) 
-('x', identificator) 
+('x', identifier) 
 (',', separator) 
 ('float', keyword) 
-('y', identificator) 
+('y', identifier) 
 (')', unknown) 
 ('{', unknown) 
 
  
 line 2: return x + y ;  
 ('return', keyword) 
-('x', identificator) 
+('x', identifier) 
 ('+', operator) 
-('y', identificator) 
+('y', identifier) 
 (';', separator) 
 
  
@@ -25,7 +25,7 @@ line 3: }
  
 line 4: int main ( ) {  
 ('int', keyword) 
-('main', identificator) 
+('main', identifier) 
 ('(', unknown) 
 (')', unknown) 
 ('{', unknown) 
@@ -37,15 +37,15 @@ line 5: //ovo je komentar
  
 line 6: int a = 1 ;  
 ('int', keyword) 
-('a', identificator) 
+('a', identifier) 
 ('=', operator) 
-('1', identificator) 
+('1', unknown) 
 (';', separator) 
 
  
 line 7: float b = 3.14 ;  
 ('float', keyword) 
-('b', identificator) 
+('b', identifier) 
 ('=', operator) 
 ('3.14', unknown) 
 (';', separator) 
@@ -53,19 +53,19 @@ line 7: float b = 3.14 ;
  
 line 8: float c = a + b ;  
 ('float', keyword) 
-('c', identificator) 
+('c', identifier) 
 ('=', operator) 
-('a', identificator) 
+('a', identifier) 
 ('+', operator) 
-('b', identificator) 
+('b', identifier) 
 (';', separator) 
 
  
 line 9: float d = zbroj (a , b) ;  
 ('float', keyword) 
-('d', identificator) 
+('d', identifier) 
 ('=', operator) 
-('zbroj', identificator) 
+('zbroj', identifier) 
 ('(a', unknown) 
 (',', separator) 
 ('b)', unknown) 
@@ -76,3 +76,26 @@ line 10: }
 ('}', unknown) 
 
  
+
+ 
+
+ 
+- separators[7]: , [2], ; [5],  
+
+ 
+- comments[1]: //ovo je komentar  [1],  
+
+ 
+- identifiers[13]: zbroj [2], x [2], y [2], main [1], a [2], b [2], c [1], d [1],  
+
+ 
+- keywords[9]: float [6], return [1], int [2],  
+
+ 
+- operators[6]: + [2], = [4],  
+
+ 
+- constants[0]:  
+
+ 
+- unknown[12]: ( [2], ) [2], { [2], } [2], 1 [1], 3.14 [1], (a [1], b) [1],  
