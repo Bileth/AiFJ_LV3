@@ -1,0 +1,11 @@
+#define b  3.14
+float zbroj ( float x , float y ) {
+	return x + y ;
+}
+
+int main ( ) {
+	//ovo je komentar
+	int a = 1 ;
+	float c = a + b ;
+	float d = zbroj (a , b) ;
+}
